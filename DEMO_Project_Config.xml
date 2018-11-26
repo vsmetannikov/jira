@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfigDump version="2.4.2-J7">
+    <multiGlobalObjectsTable>
+        <users/>
+        <groups/>
+        <projectRoles>
+            <projectRole>
+                <name>Administrators</name>
+                <description>A project role that represents administrators in a project</description>
+                <defaultGroup>jira-administrators</defaultGroup>
+            </projectRole>
+            <projectRole>
+                <name>Customer</name>
+                <description></description>
+            </projectRole>
+            <projectRole>
+                <name>Developers</name>
+            </projectRole>
+            <projectRole>
+                <name>Project Manager</name>
+                <description></description>
+            </projectRole>
+            <projectRole>
+                <name>QA</name>
+                <description></description>
+            </projectRole>
+        </projectRoles>
+        <issueTypes>
+            <issueType>
+                <name>Bug</name>
+                <description>A problem which impairs or prevents the functions of the product.</description>
+                <subtaskType>false</subtaskType>
+                <iconURL>/secure/viewavatar?size=xsmall&amp;avatarId=10303&amp;avatarType=issuetype</iconURL>
+            </issueType>
+            <issueType>
+                <name>Development Task</name>
+                <description></description>
+                <subtaskType>false</subtaskType>
+                <iconURL>/secure/viewavatar?size=xsmall&amp;avatarId=10300&amp;avatarType=issuetype</iconURL>
+            </issueType>
+            <issueType>
+                <name>Epic</name>
+                <description>Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.</description>
+                <subtaskType>false</subtaskType>
+                <iconURL>/images/icons/issuetypes/epic.svg</iconURL>
+            </issueType>
+            <issueType>
+                <name>QA Task</name>
+                <description></description>
+                <subtaskType>true</subtaskType>
+                <iconURL>/secure/viewavatar?size=xsmall&amp;avatarId=10316&amp;avatarType=issuetype</iconURL>
+            </issueType>
+            <issueType>
+                <name>Story</name>
+                <description>Created by Jira Software - do not edit or delete. Issue type for a user story.</description>
+                <subtaskType>false</subtaskType>
+                <iconURL>/images/icons/issuetypes/story.svg</iconURL>
+            </issueType>
+            <issueType>
+                <name>Task</name>
+                <description>A task that needs to be done.</description>
+                <subtaskType>false</subtaskType>
+                <iconURL>/secure/viewavatar?size=xsmall&amp;avatarId=10318&amp;avatarType=issuetype</iconURL>
+            </issueType>
+        </issueTypes>
+        <issueTypeSchemes>
+            <issueTypeScheme>
+                <name>VSMET ITS</name>
+                <defaultType>Task</defaultType>
+                <issueTypeWithSequence>
+                    <issueType>Story</issueType>
+                    <sequence>0</sequence>
+                </issueTypeWithSequence>
+                <issueTypeWithSequence>
+                    <issueType>Epic</issueType>
+                    <sequence>1</sequence>
+                </issueTypeWithSequence>
+                <issueTypeWithSequence>
+                    <issueType>Development Task</issueType>
+                    <sequence>2</sequence>
+                </issueTypeWithSequence>
+                <issueTypeWithSequence>
+                    <issueType>Task</issueType>
+                    <sequence>3</sequence>
+                </issueTypeWithSequence>
+                <issueTypeWithSequence>
+                    <issueType>Bug</issueType>
+                    <sequence>4</sequence>
+                </issueTypeWithSequence>
+                <issueTypeWithSequence>
+                    <issueType>QA Task</issueType>
+                    <sequence>5</sequence>
+                </issueTypeWithSequence>
+            </issueTypeScheme>
+        </issueTypeSchemes>
+        <prioritySchemes>
+            <priorityScheme>
+                <name>VSMET PS</name>
+                <defaultPriority>Medium</defaultPriority>
+                <priority>Highest</priority>
+                <priority>High</priority>
+                <priority>Medium</priority>
+                <priority>Low</priority>
+            </priorityScheme>
+        </prioritySchemes>
+        <customFields/>
+        <fieldConfigurations>
+            <fieldConfiguration>
+                <name>VSMET Default FC </name>
+                <description></description>
+                <individualFieldConfig>
+                    <fieldName>assignee</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>attachment</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-color:Epic Color</fieldName>
+                    <helpText>Epic Colour field for Jira Software use only.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-label:Epic Name</fieldName>
+                    <helpText>Provide a short name to identify this epic.</helpText>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-link:Epic Link</fieldName>
+                    <helpText>Choose an epic to assign this issue to.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-status:Epic Status</fieldName>
+                    <helpText>Epic Status field for Jira Software use only.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-sprint:Sprint</fieldName>
+                    <helpText>Jira Software sprint field</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>comment</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>components</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>frother-control-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>description</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>duedate</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>environment</fieldName>
+                    <helpText>For example operating system, software platform and/or hardware specifications (include as appropriate for the issue).</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>fixVersions</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>frother-control-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>issuelinks</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>issuetype</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>labels</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>priority</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>reporter</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>resolution</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>security</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>summary</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>timetracking</fieldName>
+                    <helpText>An estimate of how much work remains until this issue will be resolved.&lt;br&gt;The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number)&lt;br&gt;Examples: 4d, 5h 30m, 60m and 3w.&lt;br&gt;</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>versions</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>frother-control-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>worklog</fieldName>
+                    <helpText>Allows work to be logged whilst creating, editing or transitioning issues.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+            </fieldConfiguration>
+            <fieldConfiguration>
+                <name>VSMET Development FC</name>
+                <description></description>
+                <individualFieldConfig>
+                    <fieldName>assignee</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>attachment</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-color:Epic Color</fieldName>
+                    <helpText>Epic Colour field for Jira Software use only.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-label:Epic Name</fieldName>
+                    <helpText>Provide a short name to identify this epic.</helpText>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-link:Epic Link</fieldName>
+                    <helpText>Choose an epic to assign this issue to.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-epic-status:Epic Status</fieldName>
+                    <helpText>Epic Status field for Jira Software use only.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>com.pyxis.greenhopper.jira:gh-sprint:Sprint</fieldName>
+                    <helpText>Jira Software sprint field</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>comment</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>components</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>frother-control-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>description</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>duedate</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>environment</fieldName>
+                    <helpText>For example operating system, software platform and/or hardware specifications (include as appropriate for the issue).</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>fixVersions</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>frother-control-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>issuelinks</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>issuetype</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>labels</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>priority</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>reporter</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>resolution</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>security</fieldName>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>summary</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>timetracking</fieldName>
+                    <helpText>An estimate of how much work remains until this issue will be resolved.&lt;br&gt;The format of this is ' *w *d *h *m ' (representing weeks, days, hours and minutes - where * can be any number)&lt;br&gt;Examples: 4d, 5h 30m, 60m and 3w.&lt;br&gt;</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>jira-text-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>versions</fieldName>
+                    <hidden>false</hidden>
+                    <required>true</required>
+                    <renderer>frother-control-renderer</renderer>
+                </individualFieldConfig>
+                <individualFieldConfig>
+                    <fieldName>worklog</fieldName>
+                    <helpText>Allows work to be logged whilst creating, editing or transitioning issues.</helpText>
+                    <hidden>false</hidden>
+                    <required>false</required>
+                    <renderer>atlassian-wiki-renderer</renderer>
+                </individualFieldConfig>
+            </fieldConfiguration>
+        </fieldConfigurations>
+        <fieldConfigurationSchemes>
+            <fieldConfigurationScheme>
+                <name>VSMET FCS</name>
+                <description></description>
+                <defaultFieldConfiguration>VSMET Default FC </defaultFieldConfiguration>
+                <mappingFieldConfigIssueTypes>
+                    <issueType>Bug</issueType>
+                    <fieldConfiguration>VSMET Development FC</fieldConfiguration>
+                </mappingFieldConfigIssueTypes>
+                <mappingFieldConfigIssueTypes>
+                    <issueType>Development Task</issueType>
+                    <fieldConfiguration>VSMET Development FC</fieldConfiguration>
+                </mappingFieldConfigIssueTypes>
+            </fieldConfigurationScheme>
+        </fieldConfigurationSchemes>
+        <screens>
+            <screen>
+                <name>Default Screen</name>
+                <description>Allows to update all system fields.</description>
+                <screenTab>
+                    <name>Field Tab</name>
+                    <position>0</position>
+                    <fieldScreenLayoutItem>
+                        <fieldName>summary</fieldName>
+                        <position>0</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuetype</fieldName>
+                        <position>1</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>security</fieldName>
+                        <position>2</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>priority</fieldName>
+                        <position>3</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>duedate</fieldName>
+                        <position>4</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>components</fieldName>
+                        <position>5</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>versions</fieldName>
+                        <position>6</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>fixVersions</fieldName>
+                        <position>7</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>assignee</fieldName>
+                        <position>8</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>reporter</fieldName>
+                        <position>9</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>environment</fieldName>
+                        <position>10</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>description</fieldName>
+                        <position>11</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>timetracking</fieldName>
+                        <position>12</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>attachment</fieldName>
+                        <position>13</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>labels</fieldName>
+                        <position>14</position>
+                    </fieldScreenLayoutItem>
+                </screenTab>
+            </screen>
+            <screen>
+                <name>VSMET Bug Create/View/Edit Screen</name>
+                <description></description>
+                <screenTab>
+                    <name>Field Tab</name>
+                    <position>0</position>
+                    <fieldScreenLayoutItem>
+                        <fieldName>summary</fieldName>
+                        <position>0</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuetype</fieldName>
+                        <position>1</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>reporter</fieldName>
+                        <position>2</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>components</fieldName>
+                        <position>3</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>description</fieldName>
+                        <position>4</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>fixVersions</fieldName>
+                        <position>5</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>priority</fieldName>
+                        <position>6</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>labels</fieldName>
+                        <position>7</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>security</fieldName>
+                        <position>8</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>environment</fieldName>
+                        <position>9</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>attachment</fieldName>
+                        <position>10</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>versions</fieldName>
+                        <position>11</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuelinks</fieldName>
+                        <position>12</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>assignee</fieldName>
+                        <position>13</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>com.pyxis.greenhopper.jira:gh-epic-link:Epic Link</fieldName>
+                        <position>14</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>com.pyxis.greenhopper.jira:gh-sprint:Sprint</fieldName>
+                        <position>15</position>
+                    </fieldScreenLayoutItem>
+                </screenTab>
+            </screen>
+            <screen>
+                <name>VSMET Development Create/View Screen</name>
+                <description></description>
+                <screenTab>
+                    <name>Field Tab</name>
+                    <position>0</position>
+                    <fieldScreenLayoutItem>
+                        <fieldName>summary</fieldName>
+                        <position>0</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>assignee</fieldName>
+                        <position>1</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>com.pyxis.greenhopper.jira:gh-sprint:Sprint</fieldName>
+                        <position>2</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>description</fieldName>
+                        <position>3</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>environment</fieldName>
+                        <position>4</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>components</fieldName>
+                        <position>5</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>versions</fieldName>
+                        <position>6</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>attachment</fieldName>
+                        <position>7</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuelinks</fieldName>
+                        <position>8</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuetype</fieldName>
+                        <position>9</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>priority</fieldName>
+                        <position>10</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>reporter</fieldName>
+                        <position>11</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>com.pyxis.greenhopper.jira:gh-epic-link:Epic Link</fieldName>
+                        <position>12</position>
+                    </fieldScreenLayoutItem>
+                </screenTab>
+            </screen>
+            <screen>
+                <name>VSMET Development Edit Screen</name>
+                <description></description>
+                <screenTab>
+                    <name>Field Tab</name>
+                    <position>0</position>
+                    <fieldScreenLayoutItem>
+                        <fieldName>summary</fieldName>
+                        <position>0</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>assignee</fieldName>
+                        <position>1</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>com.pyxis.greenhopper.jira:gh-sprint:Sprint</fieldName>
+                        <position>2</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>description</fieldName>
+                        <position>3</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>environment</fieldName>
+                        <position>4</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>components</fieldName>
+                        <position>5</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>versions</fieldName>
+                        <position>6</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>attachment</fieldName>
+                        <position>7</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuelinks</fieldName>
+                        <position>8</position>
+                    </fieldScreenLayoutItem>
+                </screenTab>
+            </screen>
+            <screen>
+                <name>VSMET Epic Create/View/Edit</name>
+                <description></description>
+                <screenTab>
+                    <name>Field Tab</name>
+                    <position>0</position>
+                    <fieldScreenLayoutItem>
+                        <fieldName>com.pyxis.greenhopper.jira:gh-epic-label:Epic Name</fieldName>
+                        <position>0</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>summary</fieldName>
+                        <position>1</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuetype</fieldName>
+                        <position>2</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>security</fieldName>
+                        <position>3</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>priority</fieldName>
+                        <position>4</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>duedate</fieldName>
+                        <position>5</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>components</fieldName>
+                        <position>6</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>versions</fieldName>
+                        <position>7</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>fixVersions</fieldName>
+                        <position>8</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>assignee</fieldName>
+                        <position>9</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>reporter</fieldName>
+                        <position>10</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>environment</fieldName>
+                        <position>11</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>description</fieldName>
+                        <position>12</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>timetracking</fieldName>
+                        <position>13</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>attachment</fieldName>
+                        <position>14</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>labels</fieldName>
+                        <position>15</position>
+                    </fieldScreenLayoutItem>
+                </screenTab>
+            </screen>
+            <screen>
+                <name>VSMET QA Sub-Task Create/View/Edit Screen</name>
+                <description></description>
+                <screenTab>
+                    <name>Field Tab</name>
+                    <position>0</position>
+                    <fieldScreenLayoutItem>
+                        <fieldName>summary</fieldName>
+                        <position>0</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>description</fieldName>
+                        <position>1</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>assignee</fieldName>
+                        <position>2</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>reporter</fieldName>
+                        <position>3</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>duedate</fieldName>
+                        <position>4</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>versions</fieldName>
+                        <position>5</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>components</fieldName>
+                        <position>6</position>
+                    </fieldScreenLayoutItem>
+                </screenTab>
+            </screen>
+            <screen>
+                <name>VSMET1: Scrum Default Issue Screen</name>
+                <description></description>
+                <screenTab>
+                    <name>Field Tab</name>
+                    <position>0</position>
+                    <fieldScreenLayoutItem>
+                        <fieldName>summary</fieldName>
+                        <position>0</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>issuetype</fieldName>
+                        <position>1</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>reporter</fieldName>
+                        <position>2</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>components</fieldName>
+                        <position>3</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>description</fieldName>
+                        <position>4</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>priority</fieldName>
+                        <position>5</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>security</fieldName>
+                        <position>6</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>attachment</fieldName>
+                        <position>7</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>assignee</fieldName>
+                        <position>8</position>
+                    </fieldScreenLayoutItem>
+                    <fieldScreenLayoutItem>
+                        <fieldName>com.pyxis.greenhopper.jira:gh-sprint:Sprint</fieldName>
+                        <position>9</position>
+                    </fieldScreenLayoutItem>
+                </screenTab>
+            </screen>
+        </screens>
+        <issueTypeScreenSchemes>
+            <issueTypeScreenScheme>
+                <name>VSMET ITSS</name>
+                <description></description>
+                <defaultScheme>VSMET Default SS</defaultScheme>
+                <mappingScreenSchemesIssueTypes>
+                    <issueType>Bug</issueType>
+                    <screenScheme>VSMET Bug SS</screenScheme>
+                </mappingScreenSchemesIssueTypes>
+                <mappingScreenSchemesIssueTypes>
+                    <issueType>Development Task</issueType>
+                    <screenScheme>VSMET Dev Task SS</screenScheme>
+                </mappingScreenSchemesIssueTypes>
+                <mappingScreenSchemesIssueTypes>
+                    <issueType>Epic</issueType>
+                    <screenScheme>VSMET Epic SS</screenScheme>
+                </mappingScreenSchemesIssueTypes>
+                <mappingScreenSchemesIssueTypes>
+                    <issueType>QA Task</issueType>
+                    <screenScheme>VSMET QA Sub-Task SS</screenScheme>
+                </mappingScreenSchemesIssueTypes>
+                <mappingScreenSchemesIssueTypes>
+                    <issueType>Story</issueType>
+                    <screenScheme>VSMET Story SS</screenScheme>
+                </mappingScreenSchemesIssueTypes>
+                <mappingScreenSchemesIssueTypes>
+                    <issueType>Task</issueType>
+                    <screenScheme>VSMET Default SS</screenScheme>
+                </mappingScreenSchemesIssueTypes>
+            </issueTypeScreenScheme>
+        </issueTypeScreenSchemes>
+        <screenSchemes>
+            <screenScheme>
+                <name>VSMET Bug SS</name>
+                <description></description>
+                <defaultScreen>VSMET Bug Create/View/Edit Screen</defaultScreen>
+            </screenScheme>
+            <screenScheme>
+                <name>VSMET Default SS</name>
+                <description></description>
+                <defaultScreen>VSMET1: Scrum Default Issue Screen</defaultScreen>
+            </screenScheme>
+            <screenScheme>
+                <name>VSMET Dev Task SS</name>
+                <description></description>
+                <defaultScreen>VSMET Development Create/View Screen</defaultScreen>
+                <mappingOperationsScreens>
+                    <operation>admin.issue.operations.edit</operation>
+                    <screen>VSMET Development Edit Screen</screen>
+                </mappingOperationsScreens>
+            </screenScheme>
+            <screenScheme>
+                <name>VSMET Epic SS</name>
+                <description></description>
+                <defaultScreen>VSMET Epic Create/View/Edit</defaultScreen>
+            </screenScheme>
+            <screenScheme>
+                <name>VSMET QA Sub-Task SS</name>
+                <description></description>
+                <defaultScreen>VSMET QA Sub-Task Create/View/Edit Screen</defaultScreen>
+            </screenScheme>
+            <screenScheme>
+                <name>VSMET Story SS</name>
+                <description></description>
+                <defaultScreen>Default Screen</defaultScreen>
+            </screenScheme>
+        </screenSchemes>
+        <permissionSchemes>
+            <permissionScheme>
+                <name> VSMET PERMS</name>
+                <description></description>
+                <extendedProjectAdministration>true</extendedProjectAdministration>
+                <permissionHolder>
+                    <permission>ADD_COMMENTS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>ADMINISTER_PROJECTS</permission>
+                    <holder>
+                        <projectRole>Administrators</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>ASSIGNABLE_USER</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>ASSIGN_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>BROWSE_PROJECTS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>CLOSE_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>CREATE_ATTACHMENTS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>CREATE_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_ALL_ATTACHMENTS</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_ALL_COMMENTS</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_ALL_WORKLOGS</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_ISSUES</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_ISSUES</permission>
+                    <holder>
+                        <reporter/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_OWN_ATTACHMENTS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_OWN_COMMENTS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>DELETE_OWN_WORKLOGS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>EDIT_ALL_COMMENTS</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>EDIT_ALL_WORKLOGS</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>EDIT_ISSUES</permission>
+                    <holder>
+                        <assignee/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>EDIT_ISSUES</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>EDIT_ISSUES</permission>
+                    <holder>
+                        <reporter/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>EDIT_OWN_COMMENTS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>EDIT_OWN_WORKLOGS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>LINK_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>MANAGE_SPRINTS_PERMISSION</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>MANAGE_WATCHERS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>MODIFY_REPORTER</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>MODIFY_REPORTER</permission>
+                    <holder>
+                        <reporter/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>MOVE_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>RESOLVE_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>SCHEDULE_ISSUES</permission>
+                    <holder>
+                        <assignee/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>SCHEDULE_ISSUES</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>SCHEDULE_ISSUES</permission>
+                    <holder>
+                        <reporter/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>SET_ISSUE_SECURITY</permission>
+                    <holder>
+                        <assignee/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>SET_ISSUE_SECURITY</permission>
+                    <holder>
+                        <projectRole>Project Manager</projectRole>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>SET_ISSUE_SECURITY</permission>
+                    <holder>
+                        <reporter/>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>TRANSITION_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>VIEW_DEV_TOOLS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>VIEW_READONLY_WORKFLOW</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>VIEW_VOTERS_AND_WATCHERS</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+                <permissionHolder>
+                    <permission>WORK_ON_ISSUES</permission>
+                    <holder>
+                        <group>vsmet-users</group>
+                    </holder>
+                </permissionHolder>
+            </permissionScheme>
+        </permissionSchemes>
+        <notificationSchemes>
+            <notificationScheme>
+                <name>Default Notification Scheme</name>
+                <notificationReceiver>
+                    <event>Generic Event</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Generic Event</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Generic Event</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Assigned</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Assigned</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Assigned</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Closed</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Closed</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Closed</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Comment Edited</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Comment Edited</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Comment Edited</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Commented</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Commented</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Commented</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Created</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Created</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Created</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Deleted</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Deleted</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Deleted</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Moved</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Moved</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Moved</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Reopened</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Reopened</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Reopened</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Resolved</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Resolved</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Resolved</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Updated</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Updated</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Updated</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Worklog Deleted</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Worklog Deleted</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Worklog Deleted</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Worklog Updated</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Worklog Updated</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Issue Worklog Updated</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Logged On Issue</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Logged On Issue</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Logged On Issue</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Started On Issue</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Started On Issue</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Started On Issue</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Stopped On Issue</event>
+                    <receiver>
+                        <allWatchers/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Stopped On Issue</event>
+                    <receiver>
+                        <assignee/>
+                    </receiver>
+                </notificationReceiver>
+                <notificationReceiver>
+                    <event>Work Stopped On Issue</event>
+                    <receiver>
+                        <reporter/>
+                    </receiver>
+                </notificationReceiver>
+            </notificationScheme>
+        </notificationSchemes>
+        <issueSecuritySchemes>
+            <issueSecurityScheme>
+                <name>VSMET ISS</name>
+                <description></description>
+                <issueSecurityLevel>
+                    <name>TOP Secret</name>
+                    <description></description>
+                </issueSecurityLevel>
+                <permission>
+                    <level>TOP Secret</level>
+                    <permittedTo>
+                        <projectRole>Project Manager</projectRole>
+                    </permittedTo>
+                </permission>
+            </issueSecurityScheme>
+        </issueSecuritySchemes>
+        <priorityConfiguration>
+            <priority>
+                <name>Highest</name>
+                <description>This problem will block progress.</description>
+                <iconURL>/images/icons/priorities/highest.svg</iconURL>
+                <color>#d04437</color>
+                <sequence>1</sequence>
+            </priority>
+            <priority>
+                <name>High</name>
+                <description>Serious problem that could block progress.</description>
+                <iconURL>/images/icons/priorities/high.svg</iconURL>
+                <color>#f15C75</color>
+                <sequence>2</sequence>
+            </priority>
+            <priority>
+                <name>Medium</name>
+                <description>Has the potential to affect progress.</description>
+                <iconURL>/images/icons/priorities/medium.svg</iconURL>
+                <color>#f79232</color>
+                <sequence>3</sequence>
+            </priority>
+            <priority>
+                <name>Low</name>
+                <description>Minor problem or easily worked around.</description>
+                <iconURL>/images/icons/priorities/low.svg</iconURL>
+                <color>#707070</color>
+                <sequence>4</sequence>
+            </priority>
+        </priorityConfiguration>
+        <resolutionConfiguration>
+            <resolution>
+                <name>Done</name>
+                <description>Work has been completed on this issue.</description>
+                <sequence>1</sequence>
+            </resolution>
+            <resolution>
+                <name>Won't Do</name>
+                <description>This issue won't be actioned.</description>
+                <sequence>2</sequence>
+            </resolution>
+            <resolution>
+                <name>Duplicate</name>
+                <description>The problem is a duplicate of an existing issue.</description>
+                <sequence>3</sequence>
+            </resolution>
+            <resolution>
+                <name>Cannot Reproduce</name>
+                <description>All attempts at reproducing this issue failed, or not enough information was available to reproduce the issue. Reading the code produces no clues as to why this behavior would occur. If more information appears later, please reopen the issue.</description>
+                <sequence>4</sequence>
+            </resolution>
+        </resolutionConfiguration>
+        <statusConfiguration>
+            <status>
+                <name>Cancelled</name>
+                <iconURL>/images/icons/statuses/generic.png</iconURL>
+                <category>done</category>
+            </status>
+            <status>
+                <name>Deployed to Production</name>
+                <iconURL>/images/icons/statuses/generic.png</iconURL>
+                <category>done</category>
+            </status>
+            <status>
+                <name>Development</name>
+                <iconURL>/images/icons/statuses/generic.png</iconURL>
+                <category>indeterminate</category>
+            </status>
+            <status>
+                <name>Done</name>
+                <iconURL>/</iconURL>
+                <category>done</category>
+            </status>
+            <status>
+                <name>In Progress</name>
+                <description>This issue is being actively worked on at the moment by the assignee.</description>
+                <iconURL>/images/icons/statuses/inprogress.png</iconURL>
+                <category>indeterminate</category>
+            </status>
+            <status>
+                <name>In Review</name>
+                <description>This status is managed internally by Jira Software</description>
+                <iconURL>/</iconURL>
+                <category>indeterminate</category>
+            </status>
+            <status>
+                <name>Open</name>
+                <description>The issue is open and ready for the assignee to start work on it.</description>
+                <iconURL>/images/icons/statuses/open.png</iconURL>
+                <category>new</category>
+            </status>
+            <status>
+                <name>Ready for Deployment</name>
+                <iconURL>/images/icons/statuses/generic.png</iconURL>
+                <category>indeterminate</category>
+            </status>
+            <status>
+                <name>Rejected</name>
+                <iconURL>/images/icons/statuses/generic.png</iconURL>
+                <category>done</category>
+            </status>
+            <status>
+                <name>Rescheduled</name>
+                <iconURL>/images/icons/statuses/generic.png</iconURL>
+                <category>indeterminate</category>
+            </status>
+            <status>
+                <name>Testing</name>
+                <iconURL>/images/icons/statuses/generic.png</iconURL>
+                <category>indeterminate</category>
+            </status>
+            <status>
+                <name>To Do</name>
+                <iconURL>/</iconURL>
+                <category>new</category>
+            </status>
+        </statusConfiguration>
+        <issueLinkConfiguration>
+            <issueLink>
+                <name>Blocks</name>
+                <inward>is blocked by</inward>
+                <outward>blocks</outward>
+            </issueLink>
+            <issueLink>
+                <name>Cloners</name>
+                <inward>is cloned by</inward>
+                <outward>clones</outward>
+            </issueLink>
+            <issueLink>
+                <name>Duplicate</name>
+                <inward>is duplicated by</inward>
+                <outward>duplicates</outward>
+            </issueLink>
+            <issueLink>
+                <name>Relates</name>
+                <inward>relates to</inward>
+                <outward>relates to</outward>
+            </issueLink>
+        </issueLinkConfiguration>
+        <eventTypes/>
+        <categories/>
+        <workflowEntries>
+            <workflowEntry>
+                <name>VSMET Bug WF</name>
+                <workflow>
+                    <meta name="jira.description"></meta>
+                    <meta name="jira.update.author.key">vsmet</meta>
+                    <meta name="jira.updated.date">1543083131544</meta>
+                    <initial-actions>
+                        <action id="1" name="Create">
+                            <validators>
+                                <validator type="class" name="">
+                                    <arg name="permission">Create Issue</arg>
+                                    <arg name="class.name">com.atlassian.jira.workflow.validator.PermissionValidator</arg>
+                                </validator>
+                            </validators>
+                            <results>
+                                <unconditional-result old-status="null" status="open" step="1">
+                                    <post-functions>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueCreateFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="eventTypeName">Issue Created</arg>
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                        </function>
+                                    </post-functions>
+                                </unconditional-result>
+                            </results>
+                        </action>
+                    </initial-actions>
+                    <steps>
+                        <step id="1" name="Open">
+                            <meta name="jira.statusName">Open</meta>
+                        </step>
+                    </steps>
+                </workflow>
+                <layout-v2>{"statuses":[{"id":"I&lt;1&gt;","x":635.5,"y":67.80000000000001},{"id":"S&lt;1&gt;","x":610.890625,"y":117.80000000000001}],"transitions":[{"id":"IA&lt;1:I&lt;1&gt;:S&lt;1&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"I&lt;1&gt;","targetAngle":173.59083373702558,"targetId":"S&lt;1&gt;"}],"updateAuthor":{"userName":"vsmet","displayName":"Vladimir"},"updatedDate":1543083133731,"loopedTransitionContainer":null}</layout-v2>
+            </workflowEntry>
+            <workflowEntry>
+                <name>VSMET Default WF</name>
+                <workflow>
+                    <meta name="jira.description"></meta>
+                    <meta name="jira.update.author.key">vsmet</meta>
+                    <meta name="jira.updated.date">1543083635264</meta>
+                    <meta name="jira.update.author.name">admin</meta>
+                    <meta name="gh.version">7.12.0-DAILY20180906101548</meta>
+                    <initial-actions>
+                        <action id="1" name="Create">
+                            <meta name="jira.i18n.title">common.forms.create</meta>
+                            <validators>
+                                <validator type="class" name="">
+                                    <arg name="permission">Create Issue</arg>
+                                    <arg name="class.name">com.atlassian.jira.workflow.validator.PermissionValidator</arg>
+                                </validator>
+                            </validators>
+                            <results>
+                                <unconditional-result old-status="null" status="To Do" step="1">
+                                    <post-functions>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueCreateFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="eventTypeName">Issue Created</arg>
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction
+                            </arg>
+                                        </function>
+                                    </post-functions>
+                                </unconditional-result>
+                            </results>
+                        </action>
+                    </initial-actions>
+                    <steps>
+                        <step id="1" name="To Do">
+                            <meta name="jira.statusName">To Do</meta>
+                            <actions>
+                                <action id="51" name="Start progress">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="6">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                        <step id="6" name="In Progress">
+                            <meta name="jira.statusName">In Progress</meta>
+                            <actions>
+                                <action id="61" name="Send for Review">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="12">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                        <step id="11" name="Done">
+                            <meta name="jira.statusName">Done</meta>
+                        </step>
+                        <step id="12" name="In Review">
+                            <meta name="jira.statusName">In Review</meta>
+                            <actions>
+                                <action id="71" name="Done">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="11">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                                <action id="81" name="Reject">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="13">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                        <step id="13" name="Rejected">
+                            <meta name="jira.statusName">Rejected</meta>
+                        </step>
+                    </steps>
+                </workflow>
+                <layout-v2>{"statuses":[{"id":"I&lt;1&gt;","x":633.6875,"y":-151.2},{"id":"S&lt;11&gt;","x":427.25,"y":180.8},{"id":"S&lt;12&gt;","x":595.65625,"y":180.8},{"id":"S&lt;13&gt;","x":786.82421875,"y":180.8},{"id":"S&lt;6&gt;","x":586.15625,"y":77.80000000000001},{"id":"S&lt;1&gt;","x":606.65625,"y":-19.19999999999999}],"transitions":[{"id":"A&lt;51:S&lt;1&gt;:S&lt;6&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"S&lt;1&gt;","targetAngle":-70.01689347810002,"targetId":"S&lt;6&gt;"},{"id":"A&lt;81:S&lt;12&gt;:S&lt;13&gt;&gt;","sourceAngle":4.011983331770014,"sourceId":"S&lt;12&gt;","targetAngle":175.36770156119076,"targetId":"S&lt;13&gt;"},{"id":"A&lt;71:S&lt;12&gt;:S&lt;11&gt;&gt;","sourceAngle":175.33610291857235,"sourceId":"S&lt;12&gt;","targetAngle":5.168871625507605,"targetId":"S&lt;11&gt;"},{"id":"IA&lt;1:I&lt;1&gt;:S&lt;1&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"I&lt;1&gt;","targetAngle":-70.01689347810002,"targetId":"S&lt;1&gt;"},{"id":"A&lt;61:S&lt;6&gt;:S&lt;12&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"S&lt;6&gt;","targetAngle":-70.01689347810002,"targetId":"S&lt;12&gt;"}],"updateAuthor":{"userName":"vsmet","displayName":"Vladimir"},"updatedDate":1543081602064,"loopedTransitionContainer":null}</layout-v2>
+            </workflowEntry>
+            <workflowEntry>
+                <name>VSMET Development WF</name>
+                <workflow>
+                    <meta name="jira.description"></meta>
+                    <meta name="jira.update.author.key">vsmet</meta>
+                    <meta name="jira.updated.date">1543092910764</meta>
+                    <initial-actions>
+                        <action id="1" name="Create">
+                            <validators>
+                                <validator type="class" name="">
+                                    <arg name="permission">Create Issue</arg>
+                                    <arg name="class.name">com.atlassian.jira.workflow.validator.PermissionValidator</arg>
+                                </validator>
+                            </validators>
+                            <results>
+                                <unconditional-result old-status="null" status="open" step="1">
+                                    <post-functions>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueCreateFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="field.conditionExact2">0</arg>
+                                            <arg name="field.environment"></arg>
+                                            <arg name="field.specificPriority"></arg>
+                                            <arg name="field.conditionExact1">0</arg>
+                                            <arg name="field.watchers"></arg>
+                                            <arg name="field.copyOriginalComments">0</arg>
+                                            <arg name="field.specificIssueType"></arg>
+                                            <arg name="field.conditionLiteral2">0</arg>
+                                            <arg name="field.conditionLiteral1">0</arg>
+                                            <arg name="field.multipleIssuesPattern"></arg>
+                                            <arg name="field.copyOriginalFields"></arg>
+                                            <arg name="field.subIssueFixedVersions">0</arg>
+                                            <arg name="field.subIssueOriginalEstimate"></arg>
+                                            <arg name="field.linkKey"></arg>
+                                            <arg name="field.multipleIssuesLiteral">0</arg>
+                                            <arg name="field.subIssuePriorityId">0</arg>
+                                            <arg name="field.subIssueRemainingEstimate"></arg>
+                                            <arg name="field.commentSecurity"></arg>
+                                            <arg name="field.subIssueDescription">%issue.key% Task for testers </arg>
+                                            <arg name="field.linkType"></arg>
+                                            <arg name="field.notes"></arg>
+                                            <arg name="field.subIssueTypeId">10006</arg>
+                                            <arg name="field.conditionPattern2"></arg>
+                                            <arg name="field.conditionPattern1"></arg>
+                                            <arg name="field.specificComponents"></arg>
+                                            <arg name="field.subIssueDueDate">0</arg>
+                                            <arg name="field.copyParentFields"></arg>
+                                            <arg name="field.multipleIssuesReverse">0</arg>
+                                            <arg name="field.linkDirection"></arg>
+                                            <arg name="field.conditionValue2"></arg>
+                                            <arg name="full.module.key">org.swift.jira.cotcreatesubissue-function</arg>
+                                            <arg name="field.subIssueReporter">5</arg>
+                                            <arg name="field.conditionValue1"></arg>
+                                            <arg name="class.name">org.swift.jira.cot.functions.CreateSubIssueFunction</arg>
+                                            <arg name="field.subIssueAffectedVersions">1</arg>
+                                            <arg name="field.copyRemoteLinksType"></arg>
+                                            <arg name="field.specificAssignee"></arg>
+                                            <arg name="field.subIssueSummary">%parent_summary%</arg>
+                                            <arg name="field.multipleIssuesExact">0</arg>
+                                            <arg name="field.jqlQuery"></arg>
+                                            <arg name="field.specificReporter"></arg>
+                                            <arg name="field.specificFixedVersions"></arg>
+                                            <arg name="field.copyAttachments"></arg>
+                                            <arg name="field.copyLinksTypes"></arg>
+                                            <arg name="field.multipleIssuesValue"></arg>
+                                            <arg name="field.subIssueComponents">1</arg>
+                                            <arg name="field.dueDateOffset"></arg>
+                                            <arg name="field.createSibling">0</arg>
+                                            <arg name="field.subIssueAssignee">3</arg>
+                                            <arg name="field.labels"></arg>
+                                            <arg name="field.specificDueDate"></arg>
+                                            <arg name="field.copyLinksFrom"></arg>
+                                            <arg name="field.copyRemoteLinks"></arg>
+                                            <arg name="field.customFieldIds">customField1,customField2,customField3,customField4,customField5,customField10,customField11,customField12,customField13,customField14,customField15,customField16,customField17,customField18,customField19,</arg>
+                                            <arg name="field.conditionReverse2">0</arg>
+                                            <arg name="field.conditionReverse1">0</arg>
+                                            <arg name="field.subtaskPreCreate">0</arg>
+                                            <arg name="field.comment"></arg>
+                                            <arg name="field.specificAffectedVersions"></arg>
+                                            <arg name="field.acting"></arg>
+                                            <arg name="field.copyTransitionAttachments">0</arg>
+                                            <arg name="field.entryParent">%parent_key%</arg>
+                                            <arg name="field.copyParentComments">0</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="eventTypeName">Issue Created</arg>
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                        </function>
+                                    </post-functions>
+                                </unconditional-result>
+                            </results>
+                        </action>
+                    </initial-actions>
+                    <steps>
+                        <step id="1" name="Open">
+                            <meta name="jira.statusName">Open</meta>
+                            <actions>
+                                <action id="11" name="Start Devepopment">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="2">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                        <step id="2" name="Development">
+                            <meta name="jira.statusName">Development</meta>
+                            <actions>
+                                <action id="21" name="Send to QA">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="3">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                        <step id="3" name="Testing">
+                            <meta name="jira.statusName">Testing</meta>
+                            <actions>
+                                <action id="31" name="Bug Fix Required">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="2">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                                <action id="41" name="Testing Complete">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="4">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                        <step id="4" name="Ready for Deployment">
+                            <meta name="jira.statusName">Ready for Deployment</meta>
+                            <actions>
+                                <action id="51" name="Deployed to Production">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <restrict-to>
+                                        <conditions>
+                                            <condition type="class">
+                                                <arg name="projectRoleName">Project Manager</arg>
+                                                <arg name="class.name">com.atlassian.jira.workflow.condition.InProjectRoleCondition</arg>
+                                            </condition>
+                                        </conditions>
+                                    </restrict-to>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="5">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                                <action id="61" name="Deployment Cancelled">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <restrict-to>
+                                        <conditions>
+                                            <condition type="class">
+                                                <arg name="projectRoleName">Project Manager</arg>
+                                                <arg name="class.name">com.atlassian.jira.workflow.condition.InProjectRoleCondition</arg>
+                                            </condition>
+                                        </conditions>
+                                    </restrict-to>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="6">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                                <action id="71" name="Deployment Rescheduled">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <restrict-to>
+                                        <conditions>
+                                            <condition type="class">
+                                                <arg name="projectRoleName">Project Manager</arg>
+                                                <arg name="class.name">com.atlassian.jira.workflow.condition.InProjectRoleCondition</arg>
+                                            </condition>
+                                        </conditions>
+                                    </restrict-to>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="7">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                        <step id="5" name="Deployed to Production">
+                            <meta name="jira.statusName">Deployed to Production</meta>
+                        </step>
+                        <step id="6" name="Cancelled">
+                            <meta name="jira.statusName">Cancelled</meta>
+                        </step>
+                        <step id="7" name="Rescheduled">
+                            <meta name="jira.statusName">Rescheduled</meta>
+                            <actions>
+                                <action id="81" name="Deployed to Production">
+                                    <meta name="jira.description"></meta>
+                                    <meta name="jira.fieldscreen.id"></meta>
+                                    <restrict-to>
+                                        <conditions>
+                                            <condition type="class">
+                                                <arg name="projectRoleName">Project Manager</arg>
+                                                <arg name="class.name">com.atlassian.jira.workflow.condition.InProjectRoleCondition</arg>
+                                            </condition>
+                                        </conditions>
+                                    </restrict-to>
+                                    <results>
+                                        <unconditional-result old-status="null" status="null" step="5">
+                                            <post-functions>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.misc.CreateCommentFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                                </function>
+                                                <function type="class">
+                                                    <arg name="eventTypeName">Generic Event</arg>
+                                                    <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                                </function>
+                                            </post-functions>
+                                        </unconditional-result>
+                                    </results>
+                                </action>
+                            </actions>
+                        </step>
+                    </steps>
+                </workflow>
+                <layout-v2>{"statuses":[{"id":"S&lt;4&gt;","x":545.3046875,"y":253.0999822998047},{"id":"I&lt;1&gt;","x":635.5,"y":-96.19999999999999},{"id":"S&lt;3&gt;","x":593.0,"y":162.09999755859377},{"id":"S&lt;7&gt;","x":169.05078125,"y":253.0999822998047},{"id":"S&lt;5&gt;","x":539.7109375,"y":347.0999822998047},{"id":"S&lt;2&gt;","x":584.5,"y":43.09999755859377},{"id":"S&lt;6&gt;","x":944.00390625,"y":253.0999822998047},{"id":"S&lt;1&gt;","x":610.890625,"y":-29.19999999999999}],"transitions":[{"id":"A&lt;21:S&lt;2&gt;:S&lt;3&gt;&gt;","sourceAngle":150.0384299075421,"sourceId":"S&lt;2&gt;","targetAngle":-154.62362979324385,"targetId":"S&lt;3&gt;"},{"id":"A&lt;61:S&lt;4&gt;:S&lt;6&gt;&gt;","sourceAngle":2.284903860054758,"sourceId":"S&lt;4&gt;","targetAngle":175.75871418729366,"targetId":"S&lt;6&gt;"},{"id":"IA&lt;1:I&lt;1&gt;:S&lt;1&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"I&lt;1&gt;","targetAngle":-70.01689347810002,"targetId":"S&lt;1&gt;"},{"id":"A&lt;31:S&lt;3&gt;:S&lt;2&gt;&gt;","sourceAngle":-70.01689347810002,"sourceId":"S&lt;3&gt;","targetAngle":78.11134196037203,"targetId":"S&lt;2&gt;"},{"id":"A&lt;51:S&lt;4&gt;:S&lt;5&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"S&lt;4&gt;","targetAngle":-70.01689347810002,"targetId":"S&lt;5&gt;"},{"id":"A&lt;41:S&lt;3&gt;:S&lt;4&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"S&lt;3&gt;","targetAngle":-70.01689347810002,"targetId":"S&lt;4&gt;"},{"id":"A&lt;71:S&lt;4&gt;:S&lt;7&gt;&gt;","sourceAngle":177.51718537968839,"sourceId":"S&lt;4&gt;","targetAngle":3.2755949215413294,"targetId":"S&lt;7&gt;"},{"id":"A&lt;11:S&lt;1&gt;:S&lt;2&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"S&lt;1&gt;","targetAngle":-70.01689347810002,"targetId":"S&lt;2&gt;"},{"id":"A&lt;81:S&lt;7&gt;:S&lt;5&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"S&lt;7&gt;","targetAngle":177.6589657673976,"targetId":"S&lt;5&gt;"}],"updateAuthor":{"userName":"vsmet","displayName":"Vladimir"},"updatedDate":1543090718663,"loopedTransitionContainer":null}</layout-v2>
+            </workflowEntry>
+            <workflowEntry>
+                <name>VSMET QA WF</name>
+                <workflow>
+                    <meta name="jira.description"></meta>
+                    <meta name="jira.update.author.key">vsmet</meta>
+                    <meta name="jira.updated.date">1543082867170</meta>
+                    <initial-actions>
+                        <action id="1" name="Create">
+                            <validators>
+                                <validator type="class" name="">
+                                    <arg name="permission">Create Issue</arg>
+                                    <arg name="class.name">com.atlassian.jira.workflow.validator.PermissionValidator</arg>
+                                </validator>
+                            </validators>
+                            <results>
+                                <unconditional-result old-status="null" status="open" step="1">
+                                    <post-functions>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueCreateFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.issue.IssueReindexFunction</arg>
+                                        </function>
+                                        <function type="class">
+                                            <arg name="eventTypeName">Issue Created</arg>
+                                            <arg name="class.name">com.atlassian.jira.workflow.function.event.FireIssueEventFunction</arg>
+                                        </function>
+                                    </post-functions>
+                                </unconditional-result>
+                            </results>
+                        </action>
+                    </initial-actions>
+                    <steps>
+                        <step id="1" name="Open">
+                            <meta name="jira.statusName">Open</meta>
+                        </step>
+                    </steps>
+                </workflow>
+                <layout-v2>{"statuses":[{"id":"I&lt;1&gt;","x":635.5,"y":67.80000000000001},{"id":"S&lt;1&gt;","x":610.890625,"y":117.80000000000001}],"transitions":[{"id":"IA&lt;1:I&lt;1&gt;:S&lt;1&gt;&gt;","sourceAngle":78.11134196037203,"sourceId":"I&lt;1&gt;","targetAngle":173.59083373702558,"targetId":"S&lt;1&gt;"}],"updateAuthor":{"userName":"vsmet","displayName":"Vladimir"},"updatedDate":1543082869498,"loopedTransitionContainer":null}</layout-v2>
+            </workflowEntry>
+        </workflowEntries>
+        <workflowSchemes>
+            <workflowScheme>
+                <name>VSMET WFS</name>
+                <description>Generated by JIRA Software version 7.12.0-DAILY20180906101548. This workflow scheme is managed internally by Jira Software. Do not manually modify this workflow scheme.</description>
+                <defaultWorkflow>VSMET Bug WF</defaultWorkflow>
+                <mappingIssueTypes>
+                    <issueType>Development Task</issueType>
+                    <workflow>VSMET Development WF</workflow>
+                </mappingIssueTypes>
+                <mappingIssueTypes>
+                    <issueType>Epic</issueType>
+                    <workflow>VSMET Default WF</workflow>
+                </mappingIssueTypes>
+                <mappingIssueTypes>
+                    <issueType>QA Task</issueType>
+                    <workflow>VSMET QA WF</workflow>
+                </mappingIssueTypes>
+                <mappingIssueTypes>
+                    <issueType>Story</issueType>
+                    <workflow>VSMET Default WF</workflow>
+                </mappingIssueTypes>
+                <mappingIssueTypes>
+                    <issueType>Task</issueType>
+                    <workflow>VSMET Default WF</workflow>
+                </mappingIssueTypes>
+            </workflowScheme>
+        </workflowSchemes>
+        <filters>
+            <filter>
+                <author>vsmet</author>
+                <name>Filter for VSMET1 board</name>
+                <query>project = VSMET1 ORDER BY Rank ASC</query>
+                <sharedWith>
+                    <type>project</type>
+                    <name>VSMET</name>
+                    <permission>view</permission>
+                </sharedWith>
+            </filter>
+            <filter>
+                <author>vsmet</author>
+                <name>Not Updated &lt; Start of the Day</name>
+                <description></description>
+                <query>project =  VSMET and updated &lt;=  startOfDay() </query>
+                <sharedWith>
+                    <type>project</type>
+                    <name>VSMET</name>
+                    <permission>view</permission>
+                </sharedWith>
+            </filter>
+            <filter>
+                <author>vsmet</author>
+                <name>VSMET Scrum Board</name>
+                <query>project = VSMET ORDER BY Rank ASC</query>
+                <columns>
+                    <field>issuekey</field>
+                    <field>status</field>
+                    <field>created</field>
+                    <field>updated</field>
+                    <field>com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary:Development</field>
+                </columns>
+            </filter>
+        </filters>
+        <dashboards>
+            <dashboard>
+                <default>false</default>
+                <owner>vsmet</owner>
+                <name>Vladimir's Dashboard</name>
+                <layout>AA</layout>
+                <gadget>
+                    <type>rest/gadgets/1.0/g/com.atlassian.jira.gadgets:assigned-to-me-gadget/gadgets/assigned-to-me-gadget.xml</type>
+                    <column>0</column>
+                    <row>0</row>
+                    <color>color1</color>
+                    <parameter>
+                        <key>columnNames</key>
+                        <value>issuetype@@issuekey@@summary@@priority@@reporter@@duedate</value>
+                    </parameter>
+                    <parameter>
+                        <key>isConfigured</key>
+                        <value>true</value>
+                    </parameter>
+                    <parameter>
+                        <key>num</key>
+                        <value>10</value>
+                    </parameter>
+                    <parameter>
+                        <key>refresh</key>
+                        <value>15</value>
+                    </parameter>
+                    <parameter>
+                        <key>sortColumn</key>
+                        <value></value>
+                    </parameter>
+                </gadget>
+                <gadget>
+                    <type>rest/gadgets/1.0/g/com.atlassian.jira.gadgets:created-vs-resolved-issues-chart-gadget/gadgets/createdvsresolved-gadget.xml</type>
+                    <column>0</column>
+                    <row>1</row>
+                    <color>color1</color>
+                    <parameter>
+                        <key>daysprevious</key>
+                        <value>7</value>
+                    </parameter>
+                    <parameter>
+                        <key>id</key>
+                        <value>VSMET</value>
+                    </parameter>
+                    <parameter>
+                        <key>isConfigured</key>
+                        <value>true</value>
+                    </parameter>
+                    <parameter>
+                        <key>isCumulative</key>
+                        <value>false</value>
+                    </parameter>
+                    <parameter>
+                        <key>isPopup</key>
+                        <value>false</value>
+                    </parameter>
+                    <parameter>
+                        <key>name</key>
+                        <value>VSMET</value>
+                    </parameter>
+                    <parameter>
+                        <key>operation</key>
+                        <value>count</value>
+                    </parameter>
+                    <parameter>
+                        <key>periodName</key>
+                        <value>weekly</value>
+                    </parameter>
+                    <parameter>
+                        <key>projectOrFilterId</key>
+                        <value></value>
+                    </parameter>
+                    <parameter>
+                        <key>refresh</key>
+                        <value>15</value>
+                    </parameter>
+                    <parameter>
+                        <key>showUnresolvedTrend</key>
+                        <value>false</value>
+                    </parameter>
+                    <parameter>
+                        <key>type</key>
+                        <value>project</value>
+                    </parameter>
+                    <parameter>
+                        <key>versionLabel</key>
+                        <value>major</value>
+                    </parameter>
+                </gadget>
+                <gadget>
+                    <type>rest/gadgets/1.0/g/com.atlassian.jira.gadgets:filter-results-gadget/gadgets/filter-results-gadget.xml</type>
+                    <column>1</column>
+                    <row>0</row>
+                    <color>color1</color>
+                    <parameter>
+                        <key>columnNames</key>
+                        <value>issuetype@@issuekey@@summary@@priority@@assignee@@reporter</value>
+                    </parameter>
+                    <parameter>
+                        <key>filterId</key>
+                        <value>filter-vsmet@@Not Updated &lt; Start of the Day</value>
+                    </parameter>
+                    <parameter>
+                        <key>isConfigured</key>
+                        <value>true</value>
+                    </parameter>
+                    <parameter>
+                        <key>isPopup</key>
+                        <value>false</value>
+                    </parameter>
+                    <parameter>
+                        <key>num</key>
+                        <value>10</value>
+                    </parameter>
+                    <parameter>
+                        <key>refresh</key>
+                        <value>15</value>
+                    </parameter>
+                </gadget>
+                <gadget>
+                    <type>rest/gadgets/1.0/g/com.atlassian.jira.gadgets:pie-chart-gadget/gadgets/piechart-gadget.xml</type>
+                    <column>1</column>
+                    <row>1</row>
+                    <color>color1</color>
+                    <parameter>
+                        <key>id</key>
+                        <value>VSMET</value>
+                    </parameter>
+                    <parameter>
+                        <key>isConfigured</key>
+                        <value>true</value>
+                    </parameter>
+                    <parameter>
+                        <key>isPopup</key>
+                        <value>false</value>
+                    </parameter>
+                    <parameter>
+                        <key>name</key>
+                        <value>VSMET</value>
+                    </parameter>
+                    <parameter>
+                        <key>projectOrFilterId</key>
+                        <value></value>
+                    </parameter>
+                    <parameter>
+                        <key>refresh</key>
+                        <value>15</value>
+                    </parameter>
+                    <parameter>
+                        <key>statType</key>
+                        <value>assignees</value>
+                    </parameter>
+                    <parameter>
+                        <key>type</key>
+                        <value>project</value>
+                    </parameter>
+                </gadget>
+                <sharedWith>
+                    <type>project</type>
+                    <name>VSMET</name>
+                    <permission>view</permission>
+                </sharedWith>
+            </dashboard>
+        </dashboards>
+        <scrumKanbanBoards>
+            <scrumKanbanBoard>
+                <type>SCRUM</type>
+                <name>VSMET board</name>
+                <administratorUser>vsmet</administratorUser>
+                <mainFilter>vsmet@@VSMET Scrum Board</mainFilter>
+                <subFilter></subFilter>
+                <column>
+                    <name>To Do</name>
+                    <status>Open</status>
+                    <status>To Do</status>
+                </column>
+                <column>
+                    <name>In Progress</name>
+                    <status>Development</status>
+                    <status>In Progress</status>
+                    <status>Ready for Deployment</status>
+                    <status>Rescheduled</status>
+                    <status>Testing</status>
+                </column>
+                <column>
+                    <name>In Review</name>
+                    <status>In Review</status>
+                </column>
+                <column>
+                    <name>Done</name>
+                    <status>Deployed to Production</status>
+                    <status>Done</status>
+                </column>
+                <column>
+                    <name>Cancelled</name>
+                    <status>Cancelled</status>
+                    <status>Rejected</status>
+                </column>
+                <daysInColumnShown>false</daysInColumnShown>
+                <hideDoneIssuesOlderThan>NONE</hideDoneIssuesOlderThan>
+                <columnConstraint>
+                    <nonField>NONE</nonField>
+                </columnConstraint>
+                <swimlanes>
+                    <stories/>
+                </swimlanes>
+                <quickFilter>
+                    <name>gh.rapid.quickfilters.only.my.issues</name>
+                    <jqlQuery>assignee = currentUser()</jqlQuery>
+                    <description>gh.rapid.quickfilters.only.my.issues.desc</description>
+                </quickFilter>
+                <quickFilter>
+                    <name>gh.rapid.quickfilters.recently.updated</name>
+                    <jqlQuery>updatedDate &gt;= -1d</jqlQuery>
+                    <description>gh.rapid.quickfilters.recently.updated.desc</description>
+                </quickFilter>
+                <fieldsToShow/>
+                <fieldsToShowBacklog/>
+                <estimationStatistic>
+                    <fieldBased>timeoriginalestimate</fieldBased>
+                </estimationStatistic>
+                <trackingMethod>
+                    <fieldBased>timeestimate</fieldBased>
+                </trackingMethod>
+                <issueDetailView>
+                    <field>status</field>
+                    <field>priority</field>
+                    <field>components</field>
+                    <field>labels</field>
+                    <field>versions</field>
+                    <field>fixVersions</field>
+                    <field>issuelinks</field>
+                    <field>reporter</field>
+                    <field>assignee</field>
+                    <field>created</field>
+                    <field>updated</field>
+                    <field>com.pyxis.greenhopper.jira:gh-epic-link:Epic Link</field>
+                </issueDetailView>
+                <workingDays>
+                    <timeZone>Europe/Moscow</timeZone>
+                    <workingDay>1-monday</workingDay>
+                    <workingDay>2-tuesday</workingDay>
+                    <workingDay>3-wednesday</workingDay>
+                    <workingDay>4-thursday</workingDay>
+                    <workingDay>5-friday</workingDay>
+                </workingDays>
+            </scrumKanbanBoard>
+        </scrumKanbanBoards>
+    </multiGlobalObjectsTable>
+    <projectConfigs>
+        <projectConfig>
+            <key>VSMET</key>
+            <name>VSMET</name>
+            <description></description>
+            <typeKey>software</typeKey>
+            <url></url>
+            <avatarFile>default.svg</avatarFile>
+            <lead>vsmet</lead>
+            <defaultAssignee>unassigned</defaultAssignee>
+            <projectRoleMembers>
+                <projectRoleMembership>
+                    <name>Administrators</name>
+                    <memberUser>vsmet</memberUser>
+                    <memberGroup>jira-administrators</memberGroup>
+                </projectRoleMembership>
+                <projectRoleMembership>
+                    <name>Customer</name>
+                    <memberUser>customer</memberUser>
+                </projectRoleMembership>
+                <projectRoleMembership>
+                    <name>Developers</name>
+                    <memberUser>devuser</memberUser>
+                </projectRoleMembership>
+                <projectRoleMembership>
+                    <name>Project Manager</name>
+                </projectRoleMembership>
+                <projectRoleMembership>
+                    <name>QA</name>
+                    <memberUser>qauser</memberUser>
+                </projectRoleMembership>
+            </projectRoleMembers>
+            <versions>
+                <version>
+                    <name>v0.1b</name>
+                    <description>beta</description>
+                    <releaseDate>2018-12-08+03:00</releaseDate>
+                    <isReleased>true</isReleased>
+                    <isArchived>false</isArchived>
+                    <sequence>1</sequence>
+                </version>
+                <version>
+                    <name>0.1a</name>
+                    <description>alpha</description>
+                    <isReleased>false</isReleased>
+                    <isArchived>false</isArchived>
+                    <sequence>2</sequence>
+                </version>
+                <version>
+                    <name>1.0</name>
+                    <description></description>
+                    <releaseDate>2018-12-22+03:00</releaseDate>
+                    <isReleased>false</isReleased>
+                    <isArchived>false</isArchived>
+                    <sequence>3</sequence>
+                </version>
+            </versions>
+            <components>
+                <component>
+                    <name>Android App</name>
+                    <defaultAsignee>componentLead</defaultAsignee>
+                    <componentLead>qauser</componentLead>
+                </component>
+                <component>
+                    <name>IOS App</name>
+                    <defaultAsignee>componentLead</defaultAsignee>
+                    <componentLead>qauser</componentLead>
+                </component>
+            </components>
+            <issueTypeScheme>VSMET ITS</issueTypeScheme>
+            <priorityScheme>VSMET PS</priorityScheme>
+            <fieldConfigurationScheme>VSMET FCS</fieldConfigurationScheme>
+            <issueTypeScreenScheme>VSMET ITSS</issueTypeScreenScheme>
+            <permissionScheme> VSMET PERMS</permissionScheme>
+            <notificationScheme>Default Notification Scheme</notificationScheme>
+            <issueSecurityScheme>VSMET ISS</issueSecurityScheme>
+            <workflowScheme>VSMET WFS</workflowScheme>
+        </projectConfig>
+    </projectConfigs>
+</projectConfigDump>
