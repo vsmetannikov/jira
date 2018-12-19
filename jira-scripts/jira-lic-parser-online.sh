@@ -5,7 +5,7 @@ DATE=`date -d '+1 week' +%Y%m%d`
 #Jira URL and username replace set to the correct one
  
 URL=http://mydemojira.loc/rest/plugins/1.0/installed-marketplace?updates=true
-LOGIN=vsmet
+LOGIN=
 
 #Get Jira json and expiration dates
 
